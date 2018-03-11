@@ -1,0 +1,2 @@
+# gifstatic
+GIPHY API
