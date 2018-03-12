@@ -25,6 +25,7 @@ function displayAnimals() {
             animalImage.attr("src", results[i].images.original_still.url);
             animalImage.attr("data-still", results[i].images.original_still.url);
             animalImage.attr("data-animate", results[i].images.original.url);
+            animalImage.attr("alt", results[i].title);
 
             gifDiv.append(p);
             gifDiv.append(animalImage);
