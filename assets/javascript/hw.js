@@ -19,7 +19,12 @@ function displayAnimals() {
             var p = $("<p>").text("Rating: "+ rating)
             var animalImage = $("<img>");
 
+            animalImage.addClass("gif");
+
+            animalImage.attr("data-state", "still");
             animalImage.attr("src", results[i].images.original_still.url);
+            animalImage.attr("data-still", results[i].images.original_still.url);
+            animalImage.attr("data-animate", results[i].images.original.url);
 
             gifDiv.append(p);
             gifDiv.append(animalImage);
@@ -71,8 +76,20 @@ $("#add-animal").on("click", function (event) {
     }
 });
 
-
-
 $(document).on("click", ".animal-btn", displayAnimals);
+
+$(document).on("click", ".gif", function(){
+
+    var state = $(this).attr("data-state");
+    console.log(state);
+
+    if (state === "still"){
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("data-state", "animate");
+    }else{
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-state", "still");
+    }
+})
 
 renderButtons();
