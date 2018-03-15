@@ -22,9 +22,9 @@ function displayAnimals() {
             animalImage.addClass("gif");
 
             animalImage.attr("data-state", "still");
-            animalImage.attr("src", results[i].images.original_still.url);
-            animalImage.attr("data-still", results[i].images.original_still.url);
-            animalImage.attr("data-animate", results[i].images.original.url);
+            animalImage.attr("src", results[i].images.fixed_height_still.url);
+            animalImage.attr("data-still", results[i].images.fixed_height_still.url);
+            animalImage.attr("data-animate", results[i].images.fixed_height.url);
             animalImage.attr("alt", results[i].title);
 
             gifDiv.append(p);

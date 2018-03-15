@@ -5,28 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gifstatic</title>
+    <title>Gifstatic!!!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/CSS/style.css"></link>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 
 <body>
+    <div class="full">
+        <div class="container">
+            <h1>Gif-Animals!</h1>
+        </div>
 
-    <div class="container">
-        <h2>Awesome Animals!</h2>
+        <!--Buttons will get added here-->
+        <div id="buttonDiv">
+            <div class="row"></div>
+        </div>
+
+        <form id="animalForm">
+            <label for="animal-input">Add an Animal Bro</label>
+            <input type="text" id="animal-input">
+            <br>
+
+            <input id="add-animal" type="submit" value="Add an Animal Bro">
+        </form>
+
+        <!--animal images get added here-->
+        <div class='container-main'>
+            <div class="row" id="animals-view">
+            </div>
+            </div>
+
+        </div>
     </div>
-
-    <!--Buttons will get added here-->
-    <div id="buttonDiv"></div>
-
-    <form id="animal-form">
-        <label for="animal-input">Add an Animal Bro</label>
-        <input type="text" id="animal-input">
-        <br>
-
-        <!-- Button triggers new animal to be added -->
-        <input id="add-animal" type="submit" value="Add an Animal Bro">
-    </form>
 
 
     <!--JQuery-->

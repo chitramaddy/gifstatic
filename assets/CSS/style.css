@@ -1,0 +1,24 @@
+*{
+    margin: none;
+    box-sizing: border-box;
+    border: blue 2px solid;
+}
+
+body{
+    margin: auto;
+    
+}
+div, form, button, input{
+    margin: 10px;
+} 
+
+.animal{
+    height: 22px;
+
+}
+
+#buttonDiv{
+    text-align: center;
+    padding: 10px;
+}
+
