@@ -1,24 +1,27 @@
-*{
+* {
     margin: none;
     box-sizing: border-box;
-    border: blue 2px solid;
+    /* border: blue 2px solid; */
 }
 
-body{
+body {
     margin: auto;
-    
-}
-div, form, button, input{
-    margin: 10px;
-} 
 
-.animal{
+}
+
+div,
+form,
+button,
+input {
+    margin: 10px;
+}
+
+.animal {
     height: 22px;
 
 }
 
-#buttonDiv{
+#buttonDiv {
     text-align: center;
     padding: 10px;
 }
-
